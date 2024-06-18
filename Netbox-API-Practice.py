@@ -4,7 +4,7 @@ import json
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 apitoken = ''
-url = "https://netbox.csnt.princegeorge.ca/api/dcim/devices/"
+url = "https://netbox/api/dcim/devices/"
 
 headers = {
     'Content-Type': 'application/json',
