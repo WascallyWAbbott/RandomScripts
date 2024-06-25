@@ -1,0 +1,24 @@
+Enter file contents hereimport requests 
+import urllib3 
+import json
+
+apitoken = 'Token 921d8e965f476cb5a12f44a7fe80d5622a535550'
+url = "https://demo.netbox.dev/api/dcim/devices/"
+
+headers = {
+    'Content-Type': 'application/json',
+    'Authorization': apitoken
+}
+response = requests.get(url, headers=headers)
+json_data = response.json()
+results = json_data['results']
+
+for device in results:
+    if device['role']['slug'] != 'access-switch':
+        pass
+    elif device['primary_ip'] is None:
+        pass
+    else:
+        hostname = device['name']
+        ipaddr = device['primary_ip']['address']        
+        print('The IP address of the access switch', hostname, 'is', ipaddr)
