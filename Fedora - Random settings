@@ -3,5 +3,6 @@ Fedora 41
     - disable mesa drivers, conflicting with VMWarefx
         - in dnf.comf > excludepkgs=mesa*
 - Microsoft repos
+    - Official Microsoft Linux Page - https://learn.microsoft.com/en-us/linux/packages
     - Edge - https://linuxcapable.com/install-microsoft-edge-on-fedora-linux/
     - VS Code - https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux
