@@ -1,0 +1,7 @@
+Fedora 41
+- issues with blank screen after update, first boot.
+    - disable mesa drivers, conflicting with VMWarefx
+        - in dnf.comf > excludepkgs=mesa*
+- Microsoft repos
+    - Edge - https://linuxcapable.com/install-microsoft-edge-on-fedora-linux/
+    - VS Code - https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux
